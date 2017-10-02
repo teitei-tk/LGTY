@@ -1,0 +1,22 @@
+{
+  "name": "lgty",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "firebase": "^4.6.2",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "deploy": "yarn run build; yarn run firebase deploy",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "firebase-tools": "^3.14.0",
+    "flow-bin": "^0.59.0"
+  }
+}

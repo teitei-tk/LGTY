@@ -9,14 +9,16 @@
   "scripts": {
     "correct": "yarn run prettier --write ./src/**/*",
     "build": "yarn correct && yarn run tslint -p tslint.json && yarn run webpack",
-    "watch": "yarn run build && yarn run firebase serve",
+    "watch": "yarn run webpack -w && yarn run firebase serve",
     "deploy": "yarn run build && yarn run firebase deploy"
   },
   "dependencies": {
     "axios": "^0.17.1",
     "firebase": "^4.8.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "spectre.css": "^0.5.0",
+    "styled-components": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.36",

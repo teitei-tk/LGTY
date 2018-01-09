@@ -1,21 +1,13 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import * as firebase from "firebase";
+
+import { Configure } from "./lib/firebase/configure";
 
 import "spectre.css";
 
-import Header from "./containers/header";
-import Body from "./containers/body";
-import Content from "./containers/content";
+firebase.initializeApp(Configure);
 
-class App extends React.Component {
-  render() {
-    return (
-      <Body>
-        <Header />
-        <Content />
-      </Body>
-    );
-  }
-}
+import App from "./components/Content";
 
 ReactDOM.render(<App />, document.querySelector("#root"));
